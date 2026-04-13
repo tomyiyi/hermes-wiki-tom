@@ -102,4 +102,6 @@ Writing/（视频、文章、SOP）
 ## 相关
 
 - [[karpathy-llm-wiki-methodology]] — LLM Wiki 方法论详述
+- [[ai-agent-architecture-comparison]] — Hermes vs OpenClaw vs Claude Code 综合对比
+- [[knowledge-compilation-pattern]] — 知识编译 vs RAG 路线对比
 - `scripts/query.py` — wiki 关键词检索工具

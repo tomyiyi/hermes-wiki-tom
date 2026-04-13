@@ -75,3 +75,5 @@ MMX-CLI 为 Hermes 提供全模态能力，已集成 vision：
 
 - [[minimax-mmx-cli]] — MMX-CLI 详情
 - [[hermes-agent-core-concepts]] — Hermes 核心概念
+- [[ai-agent-architecture-comparison]] — Hermes vs OpenClaw vs Claude Code 综合对比
+- [[knowledge-management-ai-era]] — Wiki vs RAG vs Graphify 三路对比

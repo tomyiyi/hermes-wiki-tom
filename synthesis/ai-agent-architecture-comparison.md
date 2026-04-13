@@ -86,3 +86,6 @@ derived_from:
 
 - [[hermes-agent-core-concepts]] — Hermes 核心概念
 - [[hermes-vs-openclaw-vs-claude-code]] — 详细对比
+- [[hermes-wechat-integration]] — 15+平台接入矩阵、飞书重点、MMX-CLI 全模态扩展
+- [[knowledge-management-ai-era]] — Wiki vs RAG vs Graphify 三路对比
+- [[knowledge-compilation-pattern]] — 知识编译 vs RAG 路线对比

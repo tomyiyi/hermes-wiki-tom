@@ -87,7 +87,7 @@ Hermes：每次任务都在丰富自己的技能库和记忆。
 ## 七、相关对比
 
 - [[comparisons/hermes-vs-openclaw-vs-claude-code|vs OpenClaw]] — OpenClaw 专注浏览器自动化，Hermes 走全场景自主进化路线
-- [[hermes-four-layer-memory-architecture|四层记忆架构]] — 更详细的记忆系统拆解
+- [[概念/hermes-four-layer-memory-architecture|四层记忆架构]] — 更详细的记忆系统拆解
 
 ## 八、待探索
 

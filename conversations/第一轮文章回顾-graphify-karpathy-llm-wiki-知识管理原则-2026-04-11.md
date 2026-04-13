@@ -1,16 +1,16 @@
 ---
 title: 第一轮文章回顾 — Graphify / Karpathy LLM Wiki / 知识管理原则
 created: 2026-04-11
-updated: null
+updated: 2026-04-11
 layer: conversations
 type: summary
-tags: [conversation, 第一轮文章回顾, —, Graphify]
+tags: [conversation, 第一轮文章回顾, Graphify, karpathy, llm-wiki]
 sources: []
 derived_from: []
 participants: [human, hermes]
 conversation_date: 2026-04-11
-outcome: (填写这次对话产生了什么)
-key_insights: (填写核心洞察)
+outcome: 建立 hermes-wiki 初始结构，沉淀 graphify、karpathy-llm-wiki 两个概念页，确定知识管理八条原则
+key_insights: 知识要滚雪球，不要每次从零开始；Wiki 让 AI 越用越懂你；Graphify 适合代码理解，LLM Wiki 适合知识积累
 archived: false
 ---
 

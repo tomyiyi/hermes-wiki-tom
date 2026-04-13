@@ -30,15 +30,18 @@ def get_all_pages():
 
 
 def get_outlinks(content):
-    """Extract [[wikilinks]] from content, handling piped [[text|target]] syntax."""
+    """Extract [[wikilinks]] from content, handling piped [[target|display]] syntax.
+
+    hermes-wiki uses [[target|display]] format — path BEFORE |, display AFTER |.
+    Standard candidates are tried to resolve partial paths.
+    """
     links = set()
     for match in re.findall(r'\[\[([^\]]+)\]\]', content):
-        # Piped syntax: [[target|display text]] — wiki标准：|前是文件路径
+        # Piped syntax: [[target|display]] — |前是路径
         if '|' in match:
-            target = match.split('|', 1)[0]
+            target = match.split('|', 1)[0].strip()
         else:
             target = match
-        # Skip template placeholders and syntax example text
         if target in ('wikilinks', 'pagename'):
             continue
         links.add(target)
@@ -74,7 +77,10 @@ def check_frontmatter(pages):
 
 
 def check_orphaned(pages):
-    """Find pages with no incoming wikilinks."""
+    """Find pages with no incoming wikilinks.
+
+    raw/ pages are archives — exempt from orphaned check.
+    """
     all_links = {}
     for rel_path in pages:
         all_links[rel_path] = set()
@@ -99,6 +105,10 @@ def check_orphaned(pages):
                 f"summary/{link}.md",
                 f"概念/{link}.md",
                 f"comparisons/{link}.md",
+                f"processed/{link}.md",
+                f"synthesis/{link}.md",
+                f"action/{link}.md",
+                f"conversations/{link}.md",
             ]
             for cand in candidates:
                 if cand in all_links:
@@ -106,6 +116,9 @@ def check_orphaned(pages):
                     break
 
     for rel_path, links in all_links.items():
+        # raw/ pages are read-only archives — never orphaned
+        if rel_path.startswith("raw/"):
+            continue
         if not links and rel_path != "index.md":
             # index.md is allowed to have no incoming links
             warnings.append(f"  [{rel_path}] ORPHANED — no pages link to it")
@@ -200,16 +213,23 @@ def check_contradictions(pages):
         sorted_group = []
         for rel_path, fm, body in group:
             updated_str = fm.get('updated', '2000-01-01')
-            try:
-                updated = datetime.strptime(updated_str, '%Y-%m-%d')
-            except (ValueError, TypeError):
-                updated = datetime(2000, 1, 1)
+            if not updated_str or updated_str.lower() in ('null', 'none', ''):
+                updated = None
+            else:
+                try:
+                    updated = datetime.strptime(updated_str, '%Y-%m-%d')
+                except (ValueError, TypeError):
+                    updated = None
             word_count = len(body.split())
             sorted_group.append((updated, word_count, rel_path, fm))
-        sorted_group.sort(key=lambda x: x[0])
+        # Sort by date, None dates treated as very old (skip them in drift check)
+        sorted_group.sort(key=lambda x: (x[0] is None, x[0]))
         if len(sorted_group) >= 2:
             newest = sorted_group[-1]
             oldest = sorted_group[0]
+            # Skip if either has no date
+            if oldest[0] is None or newest[0] is None:
+                continue
             days_diff = (newest[0] - oldest[0]).days
             # If newest is much longer AND older than 30 days, flag for review
             if days_diff > 30 and newest[1] > oldest[1] * 3:
