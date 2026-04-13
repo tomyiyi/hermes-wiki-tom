@@ -1,0 +1,211 @@
+---
+layer: raw
+title: 8992a932d2b4_取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替
+layer: raw
+url: 
+layer: raw
+type: article
+layer: raw
+created: 2026-04-13
+---
+
+---
+layer: raw
+title: 取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替
+layer: raw
+author: 发现明日产品的
+layer: raw
+                    发现明日产品的
+layer: raw
+date: 2026年4月10日
+layer: raw
+cover: /assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-0.png
+layer: raw
+head:
+layer: raw
+  - - meta
+layer: raw
+    - name: 新闻
+---
+      
+在之前那篇讨论 Harness 该怎么翻译的文章，有读者留言说可以叫 Hermes 爱马仕。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-0.png)
+
+本以为是谐音梗，没想到确实有一个 Agent 产品叫 Hermes，而且在 GitHub 的热门榜单上，整个月都排名第一，目前已经累计有 4.8 万个 Stars。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-1.png)
+
+和这段时间以来爆火的 Agent 龙虾不同，一个是支持所有操作系统和平台的专属个人 AI 助手，**Hermes 的介绍写着「the agent that grows with you」，与你共同成长的 Agent。**
+
+听着就很高级，但这确实是 Hermes Agent 的独特之处。
+
+它有一套内置的学习循环框架，OpenClaw 靠的是修改配置文件，联合多个 Agents 来处理各项复杂的任务，Hermes Agent 是一个单一的 Agent 框架，它的能力会随着实际使用的运行时间增加而不断增强。
+
+它解决的问题是，当所有人都在讨论 agent 能做什么，但没人注意 agent 用完之后什么都不留下，而 Hermes Agent 现在能记住「什么方法有效」。
+
+社交媒体上也不少推荐 Hermes Agent 的帖子，有人说刚刚从 OpenClaw 转移到了 Hermes，是他做过最明智的选择。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-2.png)
+
+还有人分享「爱马仕橙皮书」，表示 Hermes Agent 是一个被严重低估的产品，它算得上目前最强大的开源 AI Agent 框架之一。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-3.png)
+
+上下滑动查看更多内容
+
+Hermes Agent 由 Nous Research 团队研发，查看 GitHub 上的发布记录，从 3 月中旬更新 V0.2.0 版本到昨天发布 V0.8.0，每次更新都有大量代码提交合并，以及实用的功能更新，是一个非常活跃的开源项目。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-4.png)
+
+首次推出是 2 月 25 日，https://nousresearch.com/releases
+
+Karpathy 之前分享的 LLM Wiki 笔记大法，利用大语言模型和 Obsidian 笔记工具，完成对自己知识和研究库的搭建，也被立刻加入到了 Hermes 的内置技能里。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-5.png)
+
+Hermes Agent 不仅支持安装在电脑上，通过 Termux 终端模拟器，还能安装在 Android 手机上。模型和网关的配置与 OpenClaw 类似。
+
+值得一提的是，目前还没有被 Claude「封杀」，我们仍然可以通过登录 Claude 的 Pro 及以上会员直接完成大模型配置。同时，Hermes Agent 也提供了自家的，基于订阅模式的 Nous Portal 登录。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-6.png)
+
+Nous Research 团队的 Hermes 4 模型
+
+今天，小米大模型也发文正式宣布，「**Xiaomi MiMo 已接入全球顶级 Agent 框架 Hermes Agent，并且限免两周。**」
+
+🔗 Hermes Agent 官网：https://hermes-agent.nousresearch.com
+
+凭什么是 OpenClaw 真正的对手
+
+OpenClaw 的核心是把我们的 AI 从聊天框里彻底拉出来，接入到实际的工作、学习和生活中，真正执行任务。它能连接微信、企微、飞书，能跑终端命令、控制浏览器，帮我们发邮件、管理日程安排等。
+
+但 OpenClaw 有一个缺陷是它无法从我们日复一日的使用中，自动学习进化。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-7.png)
+
+OpenClaw 的记忆是静态的——我们把信息写进配置文件，它读取，会话结束，等下次再读。它不会主动地从执行过程里提炼什么，也不会因为我们纠正过它一次，下次就自动做对。
+
+所有的工作流用过一遍，还是需要我们提醒它，打包成 Skill 或者专门的提示词等。
+
+虽然现在有一些专门的 Skill 被设计用来赋予 OpenClaw 自学习的能力，但是、 Hermes Agent 是从底层架构的学习循环，到记忆系统，和 Agent 执行内部，都把「越用越懂你」作为重点。
+
+Hermes Agent 的特别之处是一个闭合的学习循环 Learning Loop。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-8.png)
+
+每次任务完成后，Hermes 会检查：这次执行值不值得写下来？触发条件很具体，工具调用超过 5 次、中途出过错然后自己修复了、用户做过纠正、或者走了一条不明显但有效的路径。满足任何一条，它就会在 ~/.hermes/skills 目录里生成一个 Skill 文件。
+
+和技能市场上那些被广泛使用的 Skill 一样，这份自动生成的文件是下次可以直接跟着走的操作流程。
+
+名称、描述、步骤、涉及的工具调用，全部写清楚，格式遵循 agentskills.io 开放标准，理论上是可以跨兼容 agent，在 OpenClaw、Claude Code、Cursor 等工具内使用。
+
+同时，技能文件不是一次写死。Hermes Agent 在后续执行中发现更好的路径，会直接修改。修改优先用 patch，打补丁的方式，只传入旧字符串和替换内容，而不是整体重写。
+
+这个选择背后有两个考虑：全量覆写容易把原来好用的部分一起破坏掉，而 patch 只碰有问题的地方，更安全，token 消耗也更少。
+
+记忆，是 Agent 最难处理的问题
+
+另一项和 OpenClaw 的差别，是记忆系统。
+
+前几天，《生化危机》女主角 Milla Jovovich 和工程师 Ben Sigman 联合发布了开源 AI 记忆工具 MemPalace，两天内获得超过 23000 个 GitHub stars。
+
+它的设计灵感来自古希腊演讲家的记忆技法，把要记的东西放进一座想象中的建筑的不同房间，需要时走进去取。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-9.png)
+
+整个系统分成五层：Wing（项目或人物）、Hall（记忆类型）、Room（话题）、Closet（压缩摘要）、Tunnel（跨话题引用）。仅靠这个层级结构，MemPalace 称检索准确率就从 60.9% 提升到 94.8%。
+
+MemPalace 的核心判断是：不应该让 AI 来决定什么值得记，AI 的判断不可信，不如全存下来，让检索来决定什么有用。
+
+月初 Claude Code 50 万行代码泄露事件中，另外一种关于记忆的解决方案则是依靠 AI，有网友发现 Claude 会使用做梦的方式，用 Auto Dream 来自动整理我们的记忆文件。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-10.jpg)
+
+Hermes 的记忆系统也经过专门设计，一共分四层，每层负责不同的事，在不同的时机被调取。
+
+第一层叫常驻提示记忆。两个文件，MEMORY.md 和 USER.md，存放需要在每次会话开始时自动加载的上下文。总字符上限只有 3575 个，这个数字是 Hermes Agent 故意收窄的，目的是强迫我们筛选，而不是什么都往里塞。
+
+第二层是会话归档。每次对话写入 SQLite 数据库，用全文索引检索。Hermes Agent 需要历史上下文时，主动发起查询，把检索结果经过一次 LLM 摘要，只把和当前任务相关的部分注入进来。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-11.png)
+
+文档链接：https://hermes-agent.nousresearch.com/docs/user-guide/features/memory
+
+第三层是技能文件，也就是上面说的学习循环的产出。默认情况下，系统提示里只加载技能的名称和简短描述，全文按需调入。这个设计的效果是，技能库可以从 40 个增长到 200 个，而上下文成本几乎不变。
+
+第四层叫 Honcho，是可选的用户建模层，被动地在跨会话之间积累你的偏好、沟通风格和领域知识。适合把 Hermes Agent 当成日常个人助理长期使用的场景。
+
+这四层的分工原则也很清楚，如果某件事需要在每次对话里都出现，放第一层；如果只在特定话题出现时有用，留在第二层等检索；如果是可复用的操作流程，让第三层处理；如果是用户的长期画像，交给第四层。
+
+一条消息到达 Hermes Agent，无论来自 Telegram 等第三方网关，还是命令行，进入同一套同步执行引擎：生成任务 ID，从记忆层构建系统提示，优先复用缓存版本，避免重复构建，发送前检查上下文长度是否接近上限，调用模型。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-12.png)
+
+图片来源：https://mranand.substack.com/p/inside-hermes-agent-how-a-self-improving
+
+除了在任务执行的过程中会使用学习循环自动更新，Hermes 在每次会话中间还会触发一个叫周期性微调（Periodic Nudge）的机制。
+
+在没有用户输入的情况下，系统会定期自动向 agent 发一条内部提示，要求它回顾最近的操作，判断哪些值得写入记忆。完全不需要用户触发，Hermes Agent 自己决定什么值得保留。
+
+上手 Hermes Agent 需要多少成本
+
+和安装 OpenClaw 一样，Linux、macOS、WSL2 直接一行命令，Android 机上使用 Termux 也支持安装。
+
+Hermes 有提到不支持原生 Windows，我们需要另外安装 WSL2，Windows Subsystem for Linux，简称 WSL，是一个在Windows 上能够运行原生 Linux 二进制可执行文件的兼容层。
+
+安装命令会自动处理大量依赖，包括 Python 3.11、Node.js v22、ripgrep、ffmpeg、虚拟环境、全局命令、LLM 等配置。安装完成之后的界面也 Claude Code 那些终端工具一样，通过一些具体的命令来实现和 Agent 的交互。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-13.png)
+
+在模型配置上，可选推理服务商范围很宽：Nous Portal（订阅制，零配置）、Anthropic（直接用 Claude，可以用 API key 或 Claude Code 授权）、OpenRouter、DeepSeek、Hugging Face、阿里云 DashScope（Qwen 系列）、GitHub Copilot，还有任何 OpenAI 兼容接口，包括 Ollama 本地模型。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-14.png)
+
+还有小米的 Xiaomi MiMo-V2 系列，包括支持百万上下文 Token 的 MiMo-V2-Pro、全模态的理解能力的 MiMo-V2-Omni，以及 Flash 模型。小米还提供了 4.8-4.22 为期两周的限免试用，更新 Hermes Agent 到最新版本，通过 Nous Portal 免费调用小米大模型。
+
+Hermes Agent 还有一个 Auxiliary Models 模块，它是 Hermes 里专门处理「侧任务」的一组轻量模型配置，不负责主对话，但负责很多高频、关键、又不值得占用主模型的工作。
+
+例如像是图像分析、网页提取、Skill 匹配、记忆处理等不同的任务会自动分配不同的模型。在默认情况下，辅助任务会自动检测并优先使用 Gemini Flash，无需手动配置。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-15.png)
+
+这和 Anthropic 今天推出的 advisor 功能类似，都是适合主模型昂贵，但想把边角任务切到便宜模型的机制。Hermes 则是直接把「多模型编排」做成了底层架构。
+
+消息平台方面，支持列表和 Openclaw 类似，Telegram、Discord、Slack 和飞书是功能最完整的几个，语音、图片、文件等各种格式都支持。一套网关进程连接所有平台，会话统一管理。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-16.png)
+
+Hermes Agent 其实很难说是一个花几分钟安装完了，就能快速上手用起来的工具，它更多的是一套我们需要运行和维护的基础设施。
+
+如果我们只是想要一个能在手机上发消息控制的 AI 助理，OpenClaw 会是更简单的路径，写一个 SOUL.md 配置文件，跑起来，接上 Telegram，完成。
+
+Hermes Agent 适合的场景是，我们有一些重复的、会演化的工作流，同时我们愿意让 agent 从使用习惯中积累经验，我们会期待希望三个月后的 agent 和第一天的 agent 不一样。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-17.png)
+
+在社交媒体上，一些网友分享使用 Hermes Agent 的应用实例，包括像是商业自动化，把企业的客户关系管理 CRM 和知识库连接在一起；以及营销管理，将内容生成和社群平台的发布统一自动化；还有经典的代码生成等软件工程项目等。
+
+随着我们在各个真实的业务场景中应用这些技术，一个不争的事实是：Agent 正在加速杀入真正的生产环境。
+
+对于 Hermes，有人说它只是 OpenClaw 的一个「轻量级平替」，也有人说它是单一智能体的一次进化。但无论如何，Agent 的演进路线，绝对不会止步于 OpenClaw 设定的框架。
+
+而不管是 Hermes 还是 OpenClaw，现在所有的开源 agent 方案，都还留着各自的缺口。能让 agent 真正打穿主流、成为普通人日常基础设施的那个形态，大概还没出现。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-18.jpg)
+
+解决了复杂的记忆系统，还有庞大的 AI 安全问题，给了 AI 手脚又要想着怎么给他上枷锁 Harness，还有安装太复杂，门槛太高，似乎总有各种受限的地方。
+
+只能说，Hermes 这次确实给了 Agent 一个新的方向，它让 Agent 从一个用完归零的工具，变成了能从失败里学到东西、能记住教训的一种搭档关系。
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-19.png)
+
+我们正在招募伙伴
+
+**📮 简历投递邮箱**hr@ifanr.com
+
+**✉️ 邮件标题**「姓名+岗位名称」（请随简历附上项目/作品或相关链接）
+
+[更多岗位信息请点击这里🔗](https://mp.weixin.qq.com/s?__biz=MjgzMTAwODI0MA==&mid=2652396877&idx=2&sn=dfef25453a6bf0dca147b0adca3deaf7&scene=21#wechat_redirect)
+
+![](/assets/img/news/取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替-20.png)
