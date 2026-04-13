@@ -1,50 +1,57 @@
 ---
-title: "Skills 自动进化的实际效果验证"
+title: "Skills进化闭环实际效果验证"
 created: 2026-04-13
 updated: 2026-04-13
-layer: query
+layer: queries
 type: query
-tags: [AI-Agent, hermes, skills, self-evolution]
-sources: [概念/skills-auto-evolution.md]
-status: open
-priority: high
-owner: hermes
+tags: [hermes, skills, self-evolution, learning-loop, agent]
+summary_only: false
+archived: false
 ---
 
-# Skills 自动进化的实际效果验证
+# Skills进化闭环实际效果验证
 
 ## 核心问题
 
-Skills 自动进化机制的理论框架已建立，但**实际运行效果尚未验证**。
+Hermes 的 Skills 自动生成 + 自我迭代飞轮是否真的有效？实际运行中轨迹如何？
 
-## 具体验证问题
+## 关键机制
 
-### Q1: 轨迹记录是否完整？
-- 什么触发一次"轨迹记录"写入？
-- 轨迹数据存在哪里？格式是什么？
-- 如何区分成功轨迹和失败轨迹？
+### Learning Loop 触发条件（已验证）
+1. 工具调用超过 5 次
+2. 中途出错后自行修复
+3. 用户做过纠正
+4. 走了不明显但有效的路径
 
-### Q2: 经验沉淀的触发条件是否合理？
-- 文档说"调用 3+ 工具，经历 2+ 步骤"触发
-- 这个阈值是配置项还是硬编码？
-- 用户能否自定义触发阈值？
+满足任一即生成 Skill 文件，写入 `~/.hermes/skills/`。
 
-### Q3: Skill 生成质量如何？
-- 自动生成的 Skill 与人工编写的差距有多大？
-- 有没有出现过生成错误/误导性的 Skill？
-- 如何回滚/删除错误的自动生成 Skill？
+### 自我迭代方式
+- **patch 优先**：用打补丁方式替换旧字符串，而非整体覆写
+- 理由：全量覆写容易破坏原来好用的部分，patch 更安全、token 消耗更低
+- Skill 文件格式遵循 `agentskills.io` 开放标准，理论上跨 Agent 兼容
 
-### Q4: 进化闭环是否真正闭合？
-- Skill 更新后，下次调用是否真的用了新版本？
-- 版本控制机制是什么？
-- 多个 Skills 之间的调用顺序如何确定？
+### Periodic Nudge（周期性微调）
+- 无用户输入时，系统定期向 Agent 发内部提示
+- 要求回顾最近操作，判断哪些值得写入记忆
+- 完全自主触发，不需要用户参与
 
-## 验证方法
+## 待验证假设
 
-1. **看**：检查 hermes 代码中 trajectory 写入逻辑
-2. **试**：执行一个 3+ 工具调用任务，看是否生成新 Skill
-3. **查**：检查 `~/.hermes/skills/` 是否有 auto-generated 内容
+- [ ] 实际使用中 Skills 的生成质量和人工编写相比如何？
+- [ ] patch 迭代会不会积累多个互相矛盾的版本？
+- [ ] 跨会话 Skills 的复用率有多高？
+- [ ] 长期运行后 Skills 库膨胀如何治理？
 
-## 相关
-- [[概念/skills-auto-evolution]] — Skills 三层模型和进化闭环理论
-- [[stock-analysis-architecture]] — 待迁移股票系统，其中涉及 Skills 设计
+## 关联文章
+
+- [[raw/articles/Alan-hsu-hermes-advanced-play-review]]
+- [[raw/articles/simin-hermes-architecture-business-model]]
+- [[raw/articles/hermes-agent-update-v0.8.0-lingyiyi]]
+
+## 结论
+
+Skills 进化闭环是 Hermes 相对 OpenClaw 的核心壁垒，但实际效果需要通过长期使用轨迹验证。
+
+## 相关 Queries
+- [[queries/hermes-agent-trajectory-logging]] — Learning Loop 是 Skills 进化的触发机制
+- [[queries/hermes-wiki-compounding-knowledge]] — Skills 进化速度影响知识复利效应

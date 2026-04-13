@@ -1,42 +1,48 @@
 ---
-title: "股票分析系统迁移至 Hermes 的最优路径"
+title: "股票系统迁移路径"
 created: 2026-04-13
 updated: 2026-04-13
-layer: query
+layer: queries
 type: query
-tags: [stock-analysis, A股, akshare, hermes, migration]
-sources: [concepts/stock-analysis-architecture.md, action/stock-analysis-hermes-migration-20260413.md]
-status: open
-priority: medium
-owner: human
+tags: [stock-analysis, hermes, migration, pending]
+summary_only: false
+archived: false
 ---
 
-# 股票分析系统迁移至 Hermes 的最优路径
+# 股票系统迁移路径（暂停）
 
-## 背景
+## 当前状态
 
-用户明确推迟了 stock 相关迁移（"stock 相关先不做"），但这个问题需要长期规划。
+**用户指令：先不做 stock 相关，等进一步通知。**
 
-## 具体问题
+## 原计划（记录待用）
 
-### Q1: 迁移的前提条件
-- Hermes 的 Skills 系统是否支持 OpenClaw 的 stock-report-v6.py 全部功能？
-- akshare 数据源在 Hermes 环境是否有同样的连接问题（被 block）？
-- Yahoo Finance 替代方案能否无缝接入？
+### stock-analysis v6 迁移要素
 
-### Q2: 迁移的性价比
-- 当前 OpenClaw 版本运行稳定，是否值得迁移？
-- 迁移后哪些能力会变强？
-- 预计迁移工作量多大？
+1. **数据源层**
+   - AkShare eastmoney API（当前 AS4134 NAT IP 被 block，代理全 502）
+   - 替代方案：Yahoo Finance 直连（`600519.SS`、`000001.SZ`、`^HSI`）
+   - hermes venv Python 直连 Yahoo Finance 正常
 
-### Q3: v7 规划
-- 用户提到"股票分析系统 v6"，v7 的规划方向是什么？
-- v7 是否会改变数据源架构？
+2. **Hermes 集成**
+   - 复用 hermes-wiki 的知识管理框架
+   - 盘后分析优先，需要数据全面性而非实时性
+   - A股金融专家是长期主轴
 
-## 用户明确指令
-**暂时不做迁移，保持 OpenClaw 运行。**
+3. **现有资产**
+   - `stock-analysis/` 目录已有初始化结构
+   - `hermes-experiments/` 已建仓 GitHub 仓库
+   - AkShare 已安装在 hermes venv
 
-## 相关
-- [[concepts/stock-analysis-architecture]] — 系统架构详情
-- [[action/stock-analysis-hermes-migration-20260413]] — 迁移行动记录
-- [[backlog/processed-incremental-refresh]] — processed 层增量刷新待办
+### 迁移前提
+- [ ] 等用户确认恢复时间
+- [ ] 验证 Yahoo Finance 数据完整性（财务数据、公告）
+- [ ] 确认 hermes-wiki 的 Query 机制稳定后对接 stock queries
+
+## 关联文档
+
+- [[raw/articles/股票分析系统架构文档-318982]]
+
+## 相关 Queries
+- [[queries/hermes-wiki-compounding-knowledge]] — Wiki 知识管理是股票分析以外的基础设施
+- [[queries/wechat-article-ingest-automation]] — 微信文章摄取是金融知识入口

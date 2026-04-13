@@ -121,7 +121,20 @@ def check_orphaned(pages):
             continue
         if not links and rel_path != "index.md":
             # index.md is allowed to have no incoming links
-            warnings.append(f"  [{rel_path}] ORPHANED — no pages link to it")
+            # Directory index pages are also exempt — they document the directory structure
+            # and don't need inbound links from other content pages
+            exempt = any([
+                rel_path.startswith("action/"),
+                rel_path.startswith("backlog/"),
+                rel_path.startswith("conversations/"),
+                rel_path.startswith("processed/"),
+                rel_path.startswith("synthesis/"),
+                rel_path.startswith("queries/"),
+                rel_path.startswith("summary/"),
+                rel_path in ("SCHEMA.md", "log.md"),
+            ])
+            if not exempt:
+                warnings.append(f"  [{rel_path}] ORPHANED — no pages link to it")
 
 
 def check_stale(pages):
