@@ -182,10 +182,13 @@ def check_contradictions(pages):
     1. Have the 'contradictions:' frontmatter field set
     2. Cover overlapping topics but have diverging claims
     """
-    # Group pages by tags (excluding meta tags)
+    # Group pages by tags (excluding meta tags and raw/ pages)
     tag_groups = {}
     meta_tags = {'meta', 'ai-agent', 'hermes', 'openclaw', 'llm'}
     for rel_path, md in pages.items():
+        # raw/ pages are archives — skip from topic drift check
+        if rel_path.startswith("raw/"):
+            continue
         fm, body = parse_frontmatter(md.read_text())
         tags = fm.get('tags', '')
         if isinstance(tags, str):

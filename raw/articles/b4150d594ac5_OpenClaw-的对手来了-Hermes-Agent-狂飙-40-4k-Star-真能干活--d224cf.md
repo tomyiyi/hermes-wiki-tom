@@ -1,13 +1,15 @@
 ---
-layer: raw
-title: b4150d594ac5_OpenClaw 的对手来了！Hermes Agent 狂飙 40.4k Star，真能干活（附保姆级教程）。
-layer: raw
-url: 
+title: "OpenClaw的对手来了！Hermes Agent狂飙 40.4k Star，真能干活"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
 type: article
-layer: raw
-created: 2026-04-13
+tags: ['AI-Agent', 'hermes', 'OpenClaw', 'Nous Research', '安装教程']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 ---
 layer: raw

@@ -1,13 +1,15 @@
 ---
-layer: raw
-title: Hermes Agent完全指南
-layer: raw
-url: 
+title: "Hermes Agent完全指南"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
 type: article
-layer: raw
-created: 2026-04-13
+tags: ['AI-Agent', 'hermes', 'Nous Research', '安装教程', 'Skills系统']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 ---
 layer: raw

@@ -1,13 +1,15 @@
 ---
-layer: raw
-title: bac90116238b_Hermes Agent 多代理模式完全实战指南
-layer: raw
-url: 
+title: "Hermes Agent 多代理模式完全实战指南"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
 type: article
-layer: raw
-created: 2026-04-13
+tags: ['AI-Agent', 'hermes', 'multi-agent', 'Skills', ' Nous Research']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 ---
 layer: raw

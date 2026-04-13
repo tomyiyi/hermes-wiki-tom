@@ -1,13 +1,15 @@
 ---
-layer: raw
-title: a7996cc07296_Hermes Agent今天更新了，有一个细节我觉得比Gemini支持更重要
-layer: raw
-url: 
+title: "Hermes Agent今天更新了，有一个细节我觉得比Gemini支持更重要"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
 type: article
-layer: raw
-created: 2026-04-13
+tags: ['AI-Agent', 'hermes', 'release-notes', 'Gemini', ' Nous Research']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 ---
 layer: raw

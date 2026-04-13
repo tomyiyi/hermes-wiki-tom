@@ -1,13 +1,15 @@
 ---
-layer: raw
-title: cf85aeecffad_Hermes Agent测评：2026年必须换的下一代AI Agent
-layer: raw
-url: 
+title: "Hermes Agent测评：2026年必须换的下一代AI Agent"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
 type: article
-layer: raw
-created: 2026-04-13
+tags: ['AI-Agent', 'hermes', 'OpenClaw', '产品测评', ' Nous Research']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 ---
 layer: raw

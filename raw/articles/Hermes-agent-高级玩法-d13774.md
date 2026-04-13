@@ -1,13 +1,15 @@
 ---
-layer: raw
-title: Hermes agent 高级玩法
-layer: raw
-url: 
+title: "Hermes agent 高级玩法"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
 type: article
-layer: raw
-created: 2026-04-13
+tags: ['AI-Agent', 'hermes', 'advanced-usage', 'multi-agent', 'skills']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 ---
 layer: raw

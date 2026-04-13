@@ -1,13 +1,15 @@
 ---
-layer: raw
-title: 2957d41fbf15_Hermes Agent 保姆级安装教程（超详细踩坑指南）
-layer: raw
-url: 
+title: "Hermes Agent 保姆级安装教程（超详细踩坑指南）"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
 type: article
-layer: raw
-created: 2026-04-13
+tags: ['AI-Agent', 'hermes', 'installation', 'tutorial', 'Docker']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 ---
 layer: raw

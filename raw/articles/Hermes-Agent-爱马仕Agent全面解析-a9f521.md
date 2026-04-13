@@ -1,11 +1,15 @@
 ---
+title: "Hermes Agent: 爱马仕Agent全面解析"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
-created: 2026-04-12
-title: Hermes Agent: 爱马仕Agent全面解析
-layer: raw
-url: https://mp.weixin.qq.com/s/YNeg111oiSLnocIxlQzaIA
 type: article
+tags: ['AI-Agent', 'hermes', ' Nous Research']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 Hermes Agent: 爱马仕Agent全面解析
 

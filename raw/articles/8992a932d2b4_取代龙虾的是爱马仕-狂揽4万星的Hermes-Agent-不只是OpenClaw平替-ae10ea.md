@@ -1,13 +1,15 @@
 ---
-layer: raw
-title: 8992a932d2b4_取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替
-layer: raw
-url: 
+title: "取代龙虾的是爱马仕？狂揽4万星的Hermes Agent，不只是OpenClaw平替"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
 type: article
-layer: raw
-created: 2026-04-13
+tags: ['AI-Agent', 'hermes', 'OpenClaw', 'Nous Research', 'GitHub Stars']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 ---
 layer: raw

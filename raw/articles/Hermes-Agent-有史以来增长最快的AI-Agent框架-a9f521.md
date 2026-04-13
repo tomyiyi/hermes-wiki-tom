@@ -1,11 +1,15 @@
 ---
+title: "Hermes Agent 有史以来增长最快的AI Agent框架"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
-created: 2026-04-12
-title: Hermes Agent - 有史以来增长最快的AI Agent框架
-layer: raw
-url: https://mp.weixin.qq.com/s/YNeg111oiSLnocIxlQzaIA
 type: article
+tags: ['AI-Agent', 'hermes', ' Nous Research']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 # Hermes Agent - 有史以来增长最快的AI Agent框架
 

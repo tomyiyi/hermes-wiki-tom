@@ -1,13 +1,15 @@
 ---
-layer: raw
-title: 94454529b142_Hermes Agent 深度解读, 与OpenClaw的路线差异
-layer: raw
-url: 
+title: "Hermes Agent 深度解读，与OpenClaw的路线差异"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
 type: article
-layer: raw
-created: 2026-04-13
+tags: ['AI-Agent', 'hermes', 'OpenClaw', ' Nous Research', '架构分析']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 ---
 layer: raw

@@ -1,13 +1,15 @@
 ---
-layer: raw
-title: 1ce13da5e79f_Hermes Agent 必做配置与调试：从能用到好用
-layer: raw
-url: 
+title: "Hermes Agent 必做配置与调试：从能用到好用"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
 type: article
-layer: raw
-created: 2026-04-13
+tags: ['AI-Agent', 'hermes', 'configuration', '群晖NAS', 'Docker']
+source_url: ""
+source_domain: ""
+archived: false
 ---
+
 
 ---
 layer: raw

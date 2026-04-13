@@ -1,13 +1,15 @@
 ---
+title: "Hermes Agent完全指南：自进化AI Agent框架实战（60k Stars）"
+created: 2026-04-11
+updated: 2026-04-13
 layer: raw
-title: Hermes Agent完全指南：自进化AI Agent框架实战（60k Stars）
-layer: raw
-url: https://mp.weixin.qq.com/s/oxq1xH-E5irufiNkWKADHQ
-layer: raw
-type: article
-layer: raw
-created: 2026-04-12
+type: wechat
+tags: ['AI-Agent', 'hermes', '自进化', 'Skills', 'Nous Research']
+source_url: "https://mp.weixin.qq.com/s/oxq1xH-E5irufiNkWKADHQ"
+source_domain: "mp.weixin.qq.com"
+archived: false
 ---
+
 
 # Hermes Agent完全指南：自进化AI Agent框架实战（60k Stars）
 
