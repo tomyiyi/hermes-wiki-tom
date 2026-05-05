@@ -17,6 +17,8 @@ tags: [meta]
 - [[index|index.md]] — 内容索引（你在这里）
 - [[log|log.md]] — 操作日志
 
+> Last updated: 2026-05-05 | Total pages: 291
+
 ---
 
 ## 📥 00-inbox（收集箱，3）
@@ -27,23 +29,54 @@ tags: [meta]
 ## 🧠 10-knowledge（知识库，168）
 
 ### ai-cognition（2）
-- `mmguo-series-analysis-2026-04-28` — 秒秒Guo系列分析
-- `sft-long-cot-generalization-2026-05-01` — SFT + Long CoT 泛化
+- 秒秒Guo 系列分析
+- SFT + Long CoT 泛化
 
-### ai-dev（112 + 子目录 29）
-#### 根级（75+37）
-- Hermes Agent 系列文章（深度指南/安装教程/多代理/配置调试/对比 OpenClaw/测评/生态研究）
-- `Graphify` — Token 降至 1/72 的知识图谱方案
-- `Harness内心OS` — LM Harness 内心 OS
-- `Content-OS-Self-Media-Workflow-Adaptation` — 内容 OS 自媒体工作流借鉴
-- `knowledge-compilation-pattern` — RAG vs 知识编译
-- `hermes-agent-core-concepts` — 核心概念：三层记忆/闭合学习循环/多平台接入
-- `hermes-installation` — Docker 三模式安装
-- `ai-agent-architecture-comparison` — Hermes vs OpenClaw vs Claude Code
-- `knowledge-management-ai-era` — Wiki vs RAG vs Graphify
-- `hermes-wechat-integration` — 飞书集成 + MMX-CLI 全模态扩展
-- `hermes-ecosystem-tools-2026-04-22` — Atlas/Wiki/hud/ControlInterface/WebUI 评测
-- `stock-analysis-architecture` — 股票分析系统架构
+### ai-dev（168，含12个子目录）
+
+#### hermes/（41）
+- 核心：hermes-agent-core-concepts / hermes-installation / hermes-wechat-integration
+- 指南系列：保姆级安装/必做配置/多代理/完全指南/深度解读
+- 生态：hermes-ecosystem-2026-04-21 / hermes-ecosystem-tools-2026-04-22 / Hermes_Ecosystem_Research
+- 竞品对比：ai-agent-architecture-comparison / Hermes vs OpenClaw 路线差异
+- 知识管理：knowledge-compilation-pattern / karpathy-llm-wiki / Graphify
+- 工具集成：hermes-docker-deployment-guide-dockercore / 1分钟Docker部署
+- 进阶：Hermes_Skills_MOC / UPenn Graph of Skills / Trident三视角分析
+- 其他：stock-analysis-architecture / Trae_Solo_Genesis_MOC / agency_agents_analysis
+
+#### hermes-optimization/（5）
+- 12件必做配置、日常技巧、Web UI、踩坑指南、避坑真相
+
+#### workflow/（5）
+- Content-OS-Self-Media-Workflow-Adaptation
+- JustinWelsh-Content-IP-Complete-Workflow
+- Hermes_Workflow_Guide_v2.1
+- macos_daily_automation_blueprint
+- macos_shortcuts_automation_guide
+
+#### km/（8）
+- Karpathy LLM Wiki 系列（4篇）
+- Graphify：Token 降至 1/72
+- knowledge-management-ai-era
+- Karpathy 改造实践
+
+#### tools/（18）
+- Reference_* 系列：aider / axolotl / browser-use / claude-code / deerflow / dspy / gstack / langgraph / lancedb / mem0 / mcp / mcp-servers / openhands / openharness / pm2 / swe-agent / tailscale / unsloth / vllm
+
+#### competitors/（6）
+- OpenClaw：深度指南 / 路线差异 / 狂飙40.4k Star
+- DeerFlow2.0：字节超级智能体系统
+- 取代龙虾的是爱马仕
+
+#### interviews/（2）
+- Ilya Sutskever 访谈精华：压缩即理解 / next-token prediction
+- Richard Hamming：你和你的研究
+
+#### wechat/（24）
+- Hermes-Agent 文章搬运（安装/配置/命令/周报/日报/精装指南/入门/团队协作/Skill设计/Web界面/Windows部署/软件测试/5分钟上手）
+
+#### archive/（8）
+- batch1-7_absorption / universal_absorption_protocol
 
 #### agent-skills/（2）
 - Hermes Agent Skills 自动化验证记录
@@ -56,17 +89,14 @@ tags: [meta]
 - GStack：YC 总裁开源"虚拟工程团队"，71k Star
 - BMad/Superpowers/GSD 三者对比
 
-#### hermes-optimization/（5）
-- 12件必做配置、日常技巧、Web UI、踩坑指南、避坑真相
-
 ### rationality（3）
-- `deep-compression-iyla` — Ilya：压缩即理解，三层检验
-- `think-like-reality-学习笔记` — Yudkowsky：Surprise is in the map not territory
-- `think-like-reality-应用记录` — Reality Check 应用
+- deep-compression-iyla — Ilya：压缩即理解，三层检验
+- think-like-reality-学习笔记 — Yudkowsky
+- think-like-reality-应用记录 — Reality Check 应用
 
 ### stock-trading/23位游资心法（31）
 - ch02-ch31：职业炒手/Asking/赵老哥/令狐冲/退学炒股/独股一箭/欢乐海岸/宁波敢死队/徐翔 等
-- `00-综合分析` — 29位游资心法综合分析 + 学习路径
+- 00-综合分析 — 29位游资心法综合分析 + 学习路径
 
 ---
 
@@ -77,35 +107,33 @@ tags: [meta]
 
 ## ⚙️ 30-ops（运维/行动，27）
 ### 根级（9）
-- `Hermes SOP 模板.yaml`
-- `Hermes 本机长期架构`
-- `article-review-round1-20260411` — 第一轮文章回顾
-- `hermes-articles-full-read-optimization-plan` — 18篇 Hermes 文章优化建议
-- `hermes-wiki-initialized` — Wiki 初始化
-- `hermes-workflow-upgrade-20260411` — conversations 沉淀 + MEMORY 上限
-- `mmx-cli-hermes-integration-20260411` — MMX-CLI 集成
-- `codebuddy-capability-enhancement-2026` — CodeBuddy 能力增强记录
-- `lark-cli版本v1.0.9发布` — 飞书 CLI 更新
+- Hermes SOP 模板.yaml / Hermes 本机长期架构
+- article-review-round1-20260411
+- hermes-articles-full-read-optimization-plan
+- hermes-wiki-initialized / hermes-workflow-upgrade-20260411
+- mmx-cli-hermes-integration-20260411
+- codebuddy-capability-enhancement-2026
+- lark-cli版本v1.0.9发布
 
 ### backlog/（5）
-- 待办迭代项总览
+- 待办迭代项总览：conversations-certainty-auto / ingest-ai-recommend / processed-incremental-refresh / wiki-output-challenge
 
 ### comparisons/（1）
-- `hermes-vs-openclaw-vs-claude-code` — 三者全面对比
+- hermes-vs-openclaw-vs-claude-code
 
 ### conversations/（4）
 - 对话存档
 
 ### memory-archive/（2）
-- `browser-cdp-tech-2026-05-04` — 浏览器/CDP 自动化技术细节
-- `gstack-migration-2026-05-04` — gstack 迁移记录
+- browser-cdp-tech-2026-05-04 — 浏览器/CDP 自动化技术细节
+- gstack-migration-2026-05-04 — gstack 迁移记录
 
 ### queries/（5）
-- `hermes-agent-trajectory-logging` — Agent 轨迹记录
-- `hermes-skills-auto-evolution-verification` — Skills 进化验证
-- `hermes-wiki-compounding-knowledge` — 知识复利
-- `stock-analysis-hermes-migration-path` — 股票分析迁移路径
-- `wechat-article-ingest-automation` — 微信文章采集自动化
+- hermes-agent-trajectory-logging
+- hermes-skills-auto-evolution-verification
+- hermes-wiki-compounding-knowledge
+- stock-analysis-hermes-migration-path
+- wechat-article-ingest-automation
 
 ### skills/minimax-react-browser-agent/（1）
 - MiniMax React Browser Agent
@@ -113,14 +141,14 @@ tags: [meta]
 ---
 
 ## 💡 concepts（概念笔记，8）
-- `akshare-stock-data` — akshare 股票数据
-- `graph-of-skills` — 依赖感知技能检索 pipeline
-- `hermes-agent` — Nous Research/Learning Loop/四层记忆
-- `hermes-four-layer-memory-architecture` — 四层记忆 vs Claude Memory
-- `karpathy-llm-wiki-methodology` — LLM Wiki 三层架构
-- `knowledge-management-principles` — 知识管理八原则
-- `obsidian` — 本地笔记软件双向链接
-- `skills-auto-evolution` — Skills 三层模型自动进化闭环
+- akshare-stock-data — 股票数据
+- graph-of-skills — 依赖感知技能检索 pipeline
+- hermes-agent — Nous Research/Learning Loop/四层记忆
+- hermes-four-layer-memory-architecture — 四层记忆 vs Claude Memory
+- karpathy-llm-wiki-methodology — LLM Wiki 三层架构
+- knowledge-management-principles — 知识管理八原则
+- obsidian — 本地笔记软件双向链接
+- skills-auto-evolution — Skills 三层模型自动进化闭环
 
 ---
 
@@ -130,23 +158,21 @@ tags: [meta]
 ---
 
 ## 🃏 flashcards（闪卡，5）
-- `AI_LLM理论` / `Hermes核心概念` / `OPC社区项目` / `gstackSkills` / `README`
+- AI_LLM理论 / Hermes核心概念 / OPC社区项目 / gstackSkills / README
 
 ---
 
 ## 📂 opc（社区运营，20）
 ### 金花街道OPC社区方案（13）
 - V3/V5/V6/V7/V8/V9 多版迭代方案
-- `金花街道就业公共服务综合体` — 运营方案完整版
-- `金花街道OPC社区方案-V3-2026-04-结合霞碳研究室分析版`
-- `落地执行方案-第二稿`
+- 金花街道就业公共服务综合体运营方案完整版
 
 ### 政策库/（2）
 - 各城市OPC政策 / 行业洞察
 
 ### 根级（5）
-- `gstack-migration-report-2026-05-04` — gstack 迁移报告
-- `README` / 其他文档
+- gstack-migration-report-2026-05-04
+- README 等
 
 ---
 
@@ -158,19 +184,17 @@ tags: [meta]
 - 剪藏内容
 
 ### 微信文章/（2）
-- `justin-welsh-opc-20260427` — Justin Welsh 内容工业系统原文
-- `llm-wiki-20260428` — nashsu/llm_wiki 桌面应用原文
+- justin-welsh-opc-20260427 — Justin Welsh 内容工业系统原文
+- llm-wiki-20260428 — nashsu/llm_wiki 桌面应用原文
 
 ---
 
-## 🗂️ scripts（脚本，0）
-- `lint.py` / `query.py`（Python 脚本，非 Markdown）
+## 🗂️ scripts（脚本，0 .md）
+- lint.py / query.py（Python 脚本，非 Markdown）
 
 ---
 
-## 🗃️ _archive（已归档，~39 孤儿文件）
+## 🗃️ _archive（已归档）
+- `_orphan-backup/processed-stub/`（14）+ `_orphan-backup/summary-stubs/`（25）
 - 历史去重备份，index 无对应条目，无需关注
 
----
-
-> Last updated: 2026-05-05 | Total pages: 287

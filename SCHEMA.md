@@ -9,7 +9,7 @@ tags: [meta]
 # Wiki Schema
 
 ## Domain
-AI Agent 技术、自动化工作流、知识管理、LLM 应用实践
+AI Agent 技术、自动化工作流、知识管理、LLM 应用实践、OPC 社区执行
 
 ## Conventions
 - File names: lowercase, hyphens, no spaces (e.g., `graphify-token-reduction.md`)
@@ -18,6 +18,8 @@ AI Agent 技术、自动化工作流、知识管理、LLM 应用实践
 - When updating a page, always bump the `updated` date
 - Every new page must be added to `index.md` under the correct section
 - Every action must be appended to `log.md`
+- **录入前必读 `purpose.md`** — 理解知识库方向，防止盲目录入
+- **两步录入原则** — 先分析（找关联/缺口），再生成（写页面/建链接）
 
 ## Frontmatter
 ```yaml
@@ -31,6 +33,11 @@ tags: [from taxonomy below]
 sources: [raw/articles/source-name.md]
 derived_from: []   # list of pages this was synthesized from (synthesis layer only)
 action_id: null    # cron job ID or task reference if this led to an action
+solves_what:       # 知识可复用的前提——不知道解决什么就不知道何时用它
+  - "解决：<这个知识解决的是什么类型的问题>"
+  - "用户：<核心用户是谁>"
+  - "失效：<什么条件下这个知识失效>"
+  - "相关：<与它最相关的现有知识>"
 ---
 ```
 

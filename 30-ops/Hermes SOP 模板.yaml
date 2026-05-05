@@ -1,0 +1,81 @@
+version: 1
+owner: tom
+system: hermes-agent
+updated_at: 2026-04-24
+
+sops:
+  - id: wechat_ingest
+    name: 微信文章采集与归档
+    goal: 抓取微信文章，生成摘要，并写入 wiki/obsidian
+    trigger:
+      - 用户发送微信文章链接
+      - 用户要求“归档/总结/入库”
+    input:
+      - wechat_url
+    steps:
+      - 提取正文、标题、作者、时间
+      - 保存到 raw/articles 或 00-inbox
+      - 生成一句话总结、5 个要点、标签
+      - 写入 summary 或 10-knowledge
+      - 回用户一个明确结果：已完成/失败/待补充
+    output:
+      - raw note path
+      - summary note path
+      - short status
+    pitfalls:
+      - 微信正文抓取失败时，不要静默
+      - 不要把整篇正文塞进内置 Memory
+
+  - id: hermes_health_check
+    name: Hermes 状态检查
+    goal: 判断 Hermes 本机是否正常运行，并给出下一步动作
+    trigger:
+      - 用户说“现在什么情况”
+      - 飞书明显无响应
+      - 出现 timeout / inactive / reconnect 提示
+    steps:
+      - 检查 launchd 状态
+      - 检查最近日志
+      - 区分 provider 超时、飞书断连、配置错误、代码错误
+      - 输出中文结论
+    output:
+      - running | degraded | stuck | failed
+      - root_cause
+      - next_action
+    pitfalls:
+      - 不要把旧日志当成当前问题
+      - 先说明“当前真实状态”，再给建议
+
+  - id: gateway_restart
+    name: Gateway 重启
+    goal: 在确认需要时重启本机 Hermes gateway
+    trigger:
+      - 用户明确要求重启
+      - 状态检查确认 gateway 异常
+    steps:
+      - 执行 launchctl kickstart -k gui/$(id -u)/ai.hermes.gateway
+      - 检查 state 是否为 running
+      - 回报重启后的状态
+    output:
+      - restart_result
+      - pid
+      - connection_status
+    pitfalls:
+      - 不要只说“已执行”，必须验结果
+
+  - id: install_rule
+    name: 新 skill / 新项目安装规范
+    goal: 保持 Hermes 主目录整洁，避免实验内容污染长期运行环境
+    trigger:
+      - 用户要求安装 skill
+      - 用户要求接入开源项目
+      - 用户要求新增自动化工具
+    rules:
+      - skills 放到 Hermes 认可的 skills 目录
+      - 长期知识写到 hermes-wiki
+      - 实验项目放到独立目录，不混在 ~/Desktop/hermes
+      - 本机运行相关改动优先通过 config/profile/system docs 固化
+    output:
+      - install_path
+      - run_path
+      - whether_persistent
